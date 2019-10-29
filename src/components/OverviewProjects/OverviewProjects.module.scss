@@ -1,0 +1,50 @@
+@import '../../styles/variables';
+
+.wrapper {
+  padding-bottom: 90px;
+}
+
+.title {
+  font-weight: bold;
+  color: $darkGray;
+  margin: 20px 0;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.languagesWrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.languagesBlock {
+  width: 170px;
+  height: 43px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $red;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.language {
+  margin-right: 5px;
+}
+
+.progress {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background: #F5F7FA;
+  border-radius: 5px;
+}
+
+.progressColor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: $gray;
+  border-radius: 5px;
+}

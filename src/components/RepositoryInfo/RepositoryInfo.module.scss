@@ -1,0 +1,27 @@
+@import '../../styles/variables';
+
+.wrapper {
+  margin: 28px 0 35px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #C3C0C5;
+  font-size: 20px;
+  color: $gray;
+}
+
+.nameWrap {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.name {
+  color: $red;
+}
+
+.description {
+  margin: 15px 0;
+}
+
+.color {
+  color: $red;
+}
