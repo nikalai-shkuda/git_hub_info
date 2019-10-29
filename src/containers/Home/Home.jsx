@@ -21,7 +21,7 @@ class Home extends Component {
 
     const { inputValue } = this.state;
     const urlReposirories = `https://api.github.com/users/${inputValue}/repos`;
-    const urlOverview = `https://api.github.com/users/${inputValue}`;
+    const urlOverview = `https://api.github.com/users/${inputValue}`; 
 
     fetch(urlReposirories)
       .then(response => response.json())
@@ -40,9 +40,9 @@ class Home extends Component {
     const { 
       inputValue,
       repositories,
-      overview
+      overview,
     } = this.state;
-    console.log(overview)
+    
     return (
       <>
         <h1 className={styles.title}>My Github Resumé</h1>
@@ -59,12 +59,17 @@ class Home extends Component {
               />
               <button className={styles.sendBtn}>Generieren</button>
             </div>
-          </form>
+          </form>                    
           <div className={styles.content}>
-            {overview && overview.name && <Overview overview={overview} />}
-            {repositories.length && <OverviewProjects repositories={repositories} />}
+            {overview && overview.message ? 
+             <div className={styles.error}>Sorry. Something went wrong. Try again!</div> : 
+             <div>
+                {overview && overview.name && <Overview overview={overview} />}
+                {repositories.length && <OverviewProjects repositories={repositories} />}
+             </div> 
+            }
           </div>
-        </div>
+        </div>  
       </>
     )
   }

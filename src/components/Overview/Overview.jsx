@@ -11,7 +11,7 @@ const Overview = ({ overview }) => {
       <h2 className={styles.title}>{login}</h2>
       <p className={styles.subTitle}>A passionate Github user</p>
       <p className={styles.url}>{url}</p>
-      <p className={styles.description}>On GitHub since <span>{getFullYear(created_at)}</span>, <span>{name}</span> is a developer based in {<span>{location}</span>}, [COUNTRY] with <span className={styles.color}>{public_repos} public repositories</span> and <span className={styles.color}>{followers}  followers</span>.</p>
+      <p className={styles.description}>On GitHub since <span>{getFullYear(created_at)}</span>, <span>{name}</span> is a developer based in {<span>{location}</span>}, with <span className={styles.color}>{public_repos} public repositories</span> and <span className={styles.color}>{followers}  followers</span>.</p>
     </div>
   )
 };
