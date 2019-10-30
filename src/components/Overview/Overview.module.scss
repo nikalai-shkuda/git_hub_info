@@ -18,8 +18,10 @@
 }
 
 .url {
+  display: flex;
   color: $red;
   margin: 20px 0 40px;
+  text-decoration: none;
 }
 
 .color {

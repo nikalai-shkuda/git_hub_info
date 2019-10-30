@@ -13,7 +13,7 @@ const RepositoryInfo = ({ repository }) => {
       </div>
       <p className={styles.language}>{language}</p>
       <p className={styles.description}>{description}</p>
-      <p className={styles.info}>This repository has <span>{stargazers_count}</span> stars and <span>{forks}</span> forks. If you would like more information about this repository and my contributed code, please visit <span className={styles.color}>{url}</span> on GitHub.</p>
+      <p className={styles.info}>This repository has <span>{stargazers_count}</span> stars and <span>{forks}</span> forks. If you would like more information about this repository and my contributed code, please visit <a href={url} target="_blank" rel="noopener noreferrer" className={styles.color}>{url}</a> on GitHub.</p>
     </div>
   );
 }
